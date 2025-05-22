@@ -8,23 +8,26 @@
   </head>
   <body>
     <header>
-      <form>
-        <input type="search" placeholder="Enter city" readonly />
-        <input type="submit" value="search" />
+      <form class="form">
+        <input  class="searchbox" type="search" placeholder="Enter city" required />
+        <input  class="submitbox"  type="submit" value="search" />
       </form>
     </header>
     <main>
-      <h1>
-        <div>Paris</div>
+      <h1 ><div class="city-info">
+        <div class="city">Paris</div>
 
-        <div>🌥12°C</div>
+        <div class="temp">🌥12°C</div>
+        </div>
       </h1>
       <p>
         <div>
         Thursday 17:27, few clouds
         </div>
+        <div>
         
-        humidity 81%, wind 7.2km/h
+        humidity <span class="humidity">81%</span>, wind <span class="wind">7.2km/h</span>
+        </div>
       </p>
     </main>
   </body>

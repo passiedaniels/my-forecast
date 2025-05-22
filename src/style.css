@@ -1,5 +1,37 @@
 body {
-  text-align: center;
+  font-size: larger;
   background-color: violet;
   color: beige;
+}
+.form {
+  font-size: 20px;
+  padding: 50px;
+  width: 800px;
+  height: 2px;
+}
+.city-info {
+  display: flex;
+  gap: 400px;
+}
+.searchbox {
+  width: 500px;
+  height: 40px;
+  pad: 5px 10px;
+  border: 1px solid purple;
+}
+.submitbox {
+  width: 80px;
+  height: 40px;
+  background-color: rgb(6, 72, 129);
+  color: white;
+  cursor: pointer;
+}
+.submitbox:hover {
+  background-color: rgb(56, 130, 196);
+}
+.humidity {
+  color: rgb(233, 98, 98);
+}
+.wind {
+  color: rgb(233, 98, 98);
 }
