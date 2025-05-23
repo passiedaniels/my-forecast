@@ -11,7 +11,8 @@ body {
 }
 .city-info {
   display: flex;
-  gap: 400px;
+  align-items: center;
+  gap: 300px;
 }
 .searchbox {
   width: 500px;
@@ -34,4 +35,12 @@ body {
 }
 .wind {
   color: rgb(233, 98, 98);
+}
+.Weather {
+  display: flex;
+  align-items: center;
+  transform: translateY(15px);
+}
+.emoji {
+  margin-right: 5px;
 }
