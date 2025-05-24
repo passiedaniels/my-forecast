@@ -49,4 +49,9 @@ body {
 }
 .emoji {
   margin-right: 5px;
+  width: 70px;
+  height: 70px;
+}
+.temp {
+  font-size: 50px;
 }
