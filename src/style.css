@@ -2,12 +2,17 @@ body {
   font-size: larger;
   background-color: skyblue;
   color: beige;
+  padding: 0 40px;
+  box-sizing: border-box;
+  justify-content: flex-end;
 }
 .form {
   font-size: 20px;
   padding: 50px;
   width: 800px;
   height: 2px;
+  padding-left: 0;
+  margin-left: 0;
 }
 .city-info {
   display: flex;
@@ -15,9 +20,10 @@ body {
   gap: 300px;
 }
 .searchbox {
+  text-align: left;
   width: 500px;
   height: 40px;
-  pad: 5px 10px;
+  padding: 10px;
   border: 1px solid purple;
 }
 .submitbox {
