@@ -3,64 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-    
+
     <title>Weather forecast</title>
-    
   </head>
   <body>
     <header>
       <form class="form" id="form-type">
-        <input id="searchbox" class="searchbox" type="search" placeholder="Enter city" required />
-        <input  class="submitbox"  type="submit" value="search" />
+        <input
+          id="searchbox"
+          class="searchbox"
+          type="search"
+          placeholder="Enter city"
+          required
+        />
+        <input class="submitbox" type="submit" value="search" />
       </form>
     </header>
     <main>
-      <h1 ><div class="city-info">
-        <div class="city" id="city"></div>
-        <div class="Weather">
-          <div id="icon">
+      <h1>
+        <div class="city-info">
+          <div class="city" id="city"></div>
+          <div class="Weather">
+            <div id="icon">
+              <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-night.png"
+                class="emoji"
+              />
+            </div>
 
-      
-          <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-night.png" 
-          class="emoji"
-          />
+            <div class="temp" id="temp"></div>
           </div>
-    
-        
-        <div class="temp" id="temp"></div>
         </div>
-        </div>
-      </h1
-      <p>
-        <div>
+      </h1>
+
+      <div>
         <span id="time"> </span>, <span id="description">few clouds </span>
+      </div>
+      <div>
+        humidity <span class="humidity" id="humidity">81%</span>, wind
+        <span class="wind" id="wind">7.2km/h</span>
+      </div>
+
+      <div class="weather-forecast">
+        <div class="weather-day">Fri</div>
+        <div class="weather-icon">🌦</div>
+        <div class="weather-temp">
+          <div class="weather-temperature"><strong>19°</strong></div>
+          <div class="weather-temperatures">11°</div>
         </div>
-        <div>
-        
-        humidity <span class="humidity" id="humidity">81%</span>, wind <span class="wind" id="wind">7.2km/h</span>
+        <div class="weather-day">Fri</div>
+        <div class="weather-icon">🌦</div>
+        <div class="weather-temp">
+          <div class="weather-temperature"><strong>19°</strong></div>
+          <div class="weather-temperatures">11°</div>
         </div>
-      </p>
+      </div>
     </main>
   </body>
   <footer>
     <p>
-    This project was coded by <a href="https://github.com/passiedaniels">Pascalia A.</a>, open sourced <a href="https://github.com/passiedaniels/my-forecast">Github</a> and hosted on
-    <a href="https://passie-forecast.netlify.app/">Netlify</a>
+      This project was coded by
+      <a href="https://github.com/passiedaniels">Pascalia A.</a>, open sourced
+      <a href="https://github.com/passiedaniels/my-forecast">Github</a> and
+      hosted on
+      <a href="https://passie-forecast.netlify.app/">Netlify</a>
     </p>
-    
-
-    <div>
-      fri
-    </div>
-    <div>
-      🌤
-    </div>
-    <div>
-      19° 11°
-    </div>
-    
   </footer>
   <script src="src/index.js"></script>
 </html>
