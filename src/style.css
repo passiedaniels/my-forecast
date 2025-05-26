@@ -1,7 +1,7 @@
 body {
   font-size: larger;
   background-color: skyblue;
-  color: beige;
+  color: black;
   padding: 0 40px;
   box-sizing: border-box;
   justify-content: flex-end;
@@ -54,7 +54,6 @@ body {
 }
 .temp {
   font-size: 50px;
-  color: rgb(240, 146, 146);
 }
 .weather-forecast {
   display: flex;

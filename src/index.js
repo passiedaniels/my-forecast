@@ -39,6 +39,29 @@ function searchCity(city) {
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units`;
   axios.get(apiUrl).then(updateWeather);
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Tue", "Wed", "Thur", "Fri", "Sat", "Sun"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+    <div class="weather-forecast-day">
+      <div class="weather-day">${day}</div>
+      <div class="weather-icon">🌥</div>
+      <div class="weather-temperatures">
+        <div class="weather-temp1">
+          <strong>15°</strong>
+        </div>
+        <div class="weather-temp2">19°</div>
+      </div>
+    </div>
+  `;
+  });
+  forecastElement.innerHTML = forecastHtml;
+}
 
 function handleSearchSubmit(event) {
   event.preventDefault();
@@ -50,3 +73,4 @@ function handleSearchSubmit(event) {
 let formtypeElement = document.querySelector("#form-type");
 formtypeElement.addEventListener("submit", handleSearchSubmit);
 searchCity("lisbon");
+displayForecast();
