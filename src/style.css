@@ -54,27 +54,30 @@ body {
 }
 .temp {
   font-size: 50px;
+  color: rgb(240, 146, 146);
 }
 .weather-forecast {
   display: flex;
-  padding-top: 30px;
+  justify-content: space-around;
+}
+.weather-forecast-day {
   text-align: center;
-  color: rgb(63, 57, 57);
+  margin-bottom: 20px;
 }
 .weather-day {
-  padding-bottom: 20px;
+  color: rgba(0, 0, 0);
+  margin-top: 40px;
 }
 .weather-icon {
-  padding-bottom: 20px;
-}
-.weather-temp {
-  display: flex;
-  gap: 5px;
-  align-items: center;
-  justify-content: center;
-  color: rgb(207, 161, 161);
-}
-.weather-temperature {
+  font-size: 25px;
+  margin-top: 20px;
 }
 .weather-temperatures {
+  margin-top: 20px;
+  color: rgb(240, 146, 146);
+  display: flex;
+  justify-content: center;
+}
+.weather-temp1 {
+  padding: 0 10px;
 }
