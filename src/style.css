@@ -68,7 +68,7 @@ body {
   margin-top: 40px;
 }
 .weather-icon {
-  font-size: 25px;
+  width: 60px;
   margin-top: 20px;
 }
 .weather-temperatures {
